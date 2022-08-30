@@ -11324,7 +11324,7 @@ html, body {
 }
 
 .sm-hero__header-title {
-  margin-top: 58px;
+  position: relative;
 }
 
 /*navs*/
@@ -11369,13 +11369,10 @@ html, body {
   line-height: inherit !important;
 }
 
-.nav-top-right .dropdown-menu {
-  max-width: 500px;
-}
-
 .nav-top-right .dropdown-menu .dropdown-item {
   white-space: inherit;
-  width: 400px;
+  width: 50vw;
+  max-width: 400px;
   font-size: 0.875em !important;
 }
 
@@ -11401,14 +11398,21 @@ html, body {
 /*content center*/
 #container-center {
   display: flex;
-  min-height: calc(100vh - 115px);
+  min-height: calc(100vh - 117px);
   overflow: hidden;
 }
 
 /* aside sidenav */
+.bd-sidebar {
+  grid-area: sidebar;
+}
+
+.bd-layout {
+  grid-template-columns: 1fr 5fr;
+}
+
 #layoutSidenav_nav {
-  display: flex;
-  width: 225px;
+  min-width: 225px;
   background: #023e84;
   position: relative;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
@@ -11454,7 +11458,7 @@ html, body {
 }
 
 .sm-hero__sidenav {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
@@ -11611,4 +11615,31 @@ table.dataTable tfoot th {
 
 .sm-hero__datatable-actions.text-center {
   padding: 0 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  .bd-sidebar {
+    flex: 0 1 225px;
+  }
+}
+
+.bd-sidebar-toggle:hover,
+.bd-sidebar-toggle:focus {
+  color: #023e84;
+}
+
+.bd-sidebar-toggle:focus {
+  box-shadow: 0 0 0 3px rgba(2, 62, 132, 0.25);
+}
+
+.bd-sidebar-toggle .bi-collapse {
+  display: none;
+}
+
+.bd-sidebar-toggle:not(.collapsed) .bi-expand {
+  display: none;
+}
+
+.bd-sidebar-toggle:not(.collapsed) .bi-collapse {
+  display: inline-block;
 }
