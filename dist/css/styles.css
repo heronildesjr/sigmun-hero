@@ -11289,6 +11289,27 @@ textarea.form-control-lg {
   }
 }
 /*default colors*/
+body, html {
+  background-color: #f5f5f5;
+}
+
+.btn-primary {
+  background-color: #023e84 !important;
+  border-color: #023e84 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus,
+.btn-primary.active:hover, .open > .dropdown-toggle.btn-primary, .open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover, .btn-primary:active, .btn-primary.active,
+.show > .btn-primary.dropdown-toggle, .btn-primary:active:focus, .btn-primary:active:hover,
+.btn-primary.active:focus, .btn-primary.active:hover, .show > .btn-primary.dropdown-toggle:focus,
+.show > .btn-primary.dropdown-toggle:hover {
+  background-color: #003169 !important;
+  border-color: #003169 !important;
+  color: #fff !important;
+}
+
 html, body {
   font: 1rem "Inter", sans-serif, sans-serif;
 }
@@ -11341,8 +11362,8 @@ html, body {
 }
 
 .sm-hero__header-title {
-  border-bottom: 1px solid #dee2e6;
-  background: url("../assets/header-effect.png") no-repeat;
+  border-bottom: 1px solid #F3F3F3;
+  background: #fff url("../assets/header-effect.png") no-repeat;
   background-position: center right;
   background-size: auto 100%;
 }
@@ -11412,17 +11433,31 @@ html, body {
 }
 
 #layoutSidenav_nav {
-  min-width: 225px;
+  width: 0;
   background: #023e84;
   position: relative;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
 }
 
+#layoutSidenav_nav.show {
+  width: 225px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  #layoutSidenav_nav {
+    width: 0 !important;
+  }
+
+  #layoutSidenav_nav.show {
+    width: 100% !important;
+  }
+}
 .sm-hero-aside-component {
   background: #022C5C;
   transition: all 0.2s linear;
   min-height: calc(100vh - 118px);
-  width: 250px;
 }
 
 .sm-hero__sidenav-menu-heading {
@@ -11524,7 +11559,7 @@ html, body {
   transition: transform 0.15s ease;
 }
 
-.collapse.show .nav-link {
+.sm-hero__sidenav .sm-hero__sidenav-menu .nav .collapse.show .nav-link {
   padding-left: 1.5rem !important;
   transition: all 0.1s linear;
 }
@@ -11548,6 +11583,7 @@ html, body {
   padding: 30px 15px;
   flex: 1;
   background: #F3F3F3;
+  transition: all 0.2s ease-in-out;
 }
 
 /*demo main content*/
