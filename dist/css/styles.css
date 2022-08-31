@@ -11298,6 +11298,10 @@ body, html {
   border-color: #023e84 !important;
 }
 
+.text-primary {
+  color: #023e84 !important;
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
 .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus,
 .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary, .open > .dropdown-toggle.btn-primary:focus,
@@ -11311,12 +11315,16 @@ body, html {
 }
 
 html, body {
-  font: 1rem "Inter", sans-serif, sans-serif;
+  font-family: "Inter", sans-serif, sans-serif;
 }
 
 /* fixes */
 .bi::before {
   line-height: normal !important;
+}
+
+.tooltip-arrow {
+  top: 0 !important;
 }
 
 /*header*/
@@ -11393,7 +11401,7 @@ html, body {
 .nav-top-right .dropdown-menu .dropdown-item {
   white-space: inherit;
   width: 50vw;
-  max-width: 400px;
+  max-width: 350px;
   font-size: 0.875em !important;
 }
 
@@ -11521,6 +11529,7 @@ html, body {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   border-left: 3px solid #064d9d;
+  transition: all 0.2s ease-in-out;
 }
 
 .sm-hero__sidenav .sm-hero__sidenav-menu .nav .nav-link:hover {
@@ -11618,9 +11627,7 @@ section > h2, section > .h2 {
 }
 
 .card-footer a {
-  color: #023e84;
   text-decoration: none;
-  flex-grow: 1;
 }
 
 .card-header-action a {
@@ -11632,6 +11639,14 @@ section > h2, section > .h2 {
   margin: 0;
   padding: 0;
   font-size: 2.5em;
+}
+
+.card-footer.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f7f7f7;
 }
 
 /*/cards*/

@@ -156,7 +156,9 @@
                                     </a>
                                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                         <nav class="sm-hero__sidenav-menu-nested nav">
-                                            <a class="nav-link" href="crud.html">- CRUD</a>
+                                            <!-- <a class="nav-link" href="crud.html">- CRUD</a> -->
+                                            <a class="nav-link" href="listagem.html">- Listagem</a>
+                                            <a class="nav-link" href="create.html">- Create</a>
                                         </nav>
                                     </div>
                                 </li>
@@ -166,79 +168,25 @@
                 </div>
             </aside>
 
-
-
-
-
             <main id="main-content">
                 <div class="container-fluid">
-                    <section>
-                        <h2>Forms</h2>
-                        <div class="row mb-5">
 
-                            <div class="col-md-6">
-                            <!-- bootstrap v5 form example -->
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        exemplo de form
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="row mb-3">
-                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                                <div class="col-sm-10">
-                                                    <input type="email" class="form-control" id="inputEmail3">
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                                <div class="col-sm-10">
-                                                    <input type="password" class="form-control" id="inputPassword3">
-                                                </div>
-                                            </div>
-                                            <fieldset class="row mb-3">
-                                                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                                        <label class="form-check-label" for="gridRadios1">
-                                                            radio 1
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                                        <label class="form-check-label" for="gridRadios2">
-                                                            radio 2
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check disabled">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                                                        <label class="form-check-label" for="gridRadios3">
-                                                            radio 3
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item decoration-none"><a href="#">Início</a></li>
+                            <li class="breadcrumb-item decoration-none"><a href="#">Crud</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Novo</li>
+                        </ol>
+                    </nav>
 
-                                            <div class="row mb-3">
-                                                <label for="inputPassword3" class="col-sm-2 col-form-label">Textarea</label>
-                                                <div class="col-sm-10">
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                    <section id="create-form-container">
+                        <h2>Novo OBJETO</h2>
+                        <div class="row">
 
-
-                            <div class="col-md-6">
+                            <div class="col-md-12">
 
                                 <!-- commom bootstrap form -->
                                 <div class="card mb-4">
-                                    <div class="card-header">
-                                        Título de exemplo de cartão
-                                    </div>
                                     <div class="card-body">
                                         <form>
                                             <div class="mb-3">
@@ -257,131 +205,14 @@
                                         </form>
                                     </div>
                                     <div class="card-footer d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-secondary me-2"><i class="bi bi-x"></i> Reset</button>
+                                        <a href="#" type="submit" class="d-inline-block btn btn-secondary me-2"><i class="bi bi-arrow-left"></i> Retornar</a>
+                                        <button type="submit" class="btn btn-warning me-2"><i class="bi bi-eraser"></i> Apagar</button>
                                         <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Submit</button>
                                     </div>
                                 </div>
                             </div>
 
-
-
                         </div>
-                    </section>
-
-
-
-
-
-
-
-                    <section>
-                        <h2>List Datatable</h2>
-                        <div class="card p-3">
-                            <table id="demo-datatable" class="table table-striped" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>Nome</th>
-                                        <th>Posição</th>
-                                        <th>Escritório</th>
-                                        <th>Idade</th>
-                                        <th>Data de início</th>
-                                        <th>Ações</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <td>Caesar Vance</td>
-                                        <td>Pre-Sales Support</td>
-                                        <td>New York</td>
-                                        <td>21</td>
-                                        <td>2011-12-12</td>
-                                        <td>
-                                            <div class="sm-hero__datatable-actions">
-                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Edit</a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Unity Butler</td>
-                                        <td>Marketing Designer</td>
-                                        <td>San Francisco</td>
-                                        <td>47</td>
-                                        <td>2009-12-09</td>
-                                        <td>
-                                            <div class="sm-hero__datatable-actions">
-                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Edit</a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Howard Hatfield</td>
-                                        <td>Office Manager</td>
-                                        <td>San Francisco</td>
-                                        <td>51</td>
-                                        <td>2008-12-16</td>
-                                        <td>
-                                            <div class="sm-hero__datatable-actions">
-                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Edit</a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hope Fuentes</td>
-                                        <td>Secretary</td>
-                                        <td>San Francisco</td>
-                                        <td>41</td>
-                                        <td>2010-02-12</td>
-                                        <td>
-                                            <div class="sm-hero__datatable-actions">
-                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Edit</a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vivian Harrell</td>
-                                        <td>Financial Controller</td>
-                                        <td>San Francisco</td>
-                                        <td>62</td>
-                                        <td>2009-02-14</td>
-                                        <td>
-                                            <div class="sm-hero__datatable-actions">
-                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Edit</a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Timothy Mooney</td>
-                                        <td>Office Manager</td>
-                                        <td>London</td>
-                                        <td>37</td>
-                                        <td>2008-12-11</td>
-                                        <td>
-                                            <div class="sm-hero__datatable-actions">
-                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Edit</a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Ações</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-
                     </section>
 
 
@@ -404,22 +235,36 @@
         <!-- main script -temp -->
         <script>
             $(document).ready(function() {
-                $('#demo-datatable').DataTable({
-                    paging: true,
-                    ordering: true,
-                    info: true,
-                    language: {
-                        search: 'Placeholder exemplo...',
-                        url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/pt-BR.json',
-                    },
+
+                var cardHeight = $('#create-form-container .card').outerHeight();
+                const fixCardFooter = () => {
+                    $('#create-form-container .card .card-footer').addClass('sticky').width($('#create-form-container .card-body').width()).css({left: $('#create-form-container').offset().left + 1});
+                    $('#create-form-container .card').css({paddingBottom: $('#create-form-container .card .card-footer').outerHeight()});
+                };
+
+                const unfixCardFooter = () => {
+                    $('#create-form-container .card .card-footer').removeClass('sticky').width('auto').css({left: 0});
+                    $('#create-form-container .card').css({paddingBottom: 0});
+                };
+
+                // if document.height > window.height
+                if ($(document).height() > $(window).height()) {
+                    fixCardFooter();
+                }
+
+                // sticky footer on scroll
+                $(window).scroll(function() {
+
+                    // fix footer if page have scroll
+                    if ($(window).scrollTop() + $(window).height() <= $(document).height() -110 ) {
+                        fixCardFooter();
+                    } else {
+                        unfixCardFooter();
+                    }
+
                 });
 
-                // margin top same as header height to avoid overlap on resize
-                jQuery(window).on('resize', function() {
-                    $('.sm-hero__header-title').css('margin-top', jQuery('#main-navbar').outerHeight() + 3 + 'px');
-                });
 
-                $('.sm-hero__header-title').css('margin-top', jQuery('#main-navbar').outerHeight() + 3 + 'px');
             });
         </script>
 
