@@ -10,8 +10,10 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!--- gridjs Mermaid theme -->
-        <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+
+        <!-- toastify-js -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     </head>
     <body>
         <header id="sm-hero-demo__header">
@@ -183,15 +185,22 @@
                     <section id="list-example">
                         <h2>List Datatable</h2>
 
-                        <div class="sm-hero__toolbox mb-2">
-                            <div class="card">
 
-                                <div class="card-body">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"><i class="bi bi-plus"></i> Adicionar (modal)</a>
-                                    <a href="create.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"><i class="bi bi-link"></i> Adicionar (form externo)</a>
-                                    <a href="#" class="btn btn-primary"><i class="bi bi-info-circle"></i> ação 1</a>
-                                    <a href="#" class="btn btn-secondary"><i class="bi bi-info-circle"></i> ação 2</a>
-                                    <a href="#" class="btn btn-warning float-end"><i class="bi bi-info-circle"></i> ação 3</a>
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <i class="bi bi-check-circle"></i>
+                                <strong>Sucesso!</strong> Registro cadastrado.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+
+                        <div class="sm-hero__toolbox mb-3">
+                            <div class="card shadow-sm">
+
+                                <div class="card-body p-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-sm border-0 btn-outline-success"><i class="bi bi-plus"></i> Adicionar (modal)</a>
+                                    <a href="create.html" class="btn btn-sm border-0 btn-outline-success"><i class="bi bi-link"></i> Adicionar (form externo)</a>
+                                    <a href="#" class="btn btn-sm border-0 btn-outline-primary" onclick="toastify('mensagem', 'success')" ><i class="bi bi-info-circle"></i> ação 1</a>
+                                    <a href="#" class="btn btn-sm border-0 btn-outline-secondary"><i class="bi bi-info-circle"></i> ação 2</a>
+                                    <a href="#" class="btn btn-sm border-0 btn-outline-warning float-end"><i class="bi bi-info-circle"></i> ação 3</a>
                                 </div>
 
                             </div>
@@ -280,11 +289,11 @@
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
+                                        <th>Nome</th>
+                                        <th>Posição</th>
+                                        <th>Escritório</th>
+                                        <th>Idade</th>
+                                        <th>Data de Início</th>
                                         <th>Ações</th>
                                     </tr>
                                 </tfoot>
@@ -328,7 +337,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x"></i> Fechar</button>
-                        <button type="button" class="btn btn-primary"><i class="bi bi-save"></i> Salvar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="toastify('sucesso! registro cadastrado', 'success')"><i class="bi bi-save"></i> Salvar</button>
                     </div>
                 </div>
             </div>
@@ -344,6 +353,9 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 
+        <!-- toastify-js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
         <!-- main script -temp -->
         <script>
             $(document).ready(function() {
@@ -355,14 +367,23 @@
                         url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/pt-BR.json',
                     },
                 });
-
-                // margin top same as header height to avoid overlap on resize
-                jQuery(window).on('resize', function() {
-                    $('.sm-hero__header-title').css('margin-top', jQuery('#main-navbar').outerHeight() + 3 + 'px');
-                });
-
-                $('.sm-hero__header-title').css('margin-top', jQuery('#main-navbar').outerHeight() + 3 + 'px');
             });
+
+            // toastify-js
+            function toastify(message, type) {
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    close: true,
+                    gravity: "bottom",
+                    position: "right",
+                    backgroundColor: type == 'success' ? "#4fbe87" : "#f83f37",
+                    stopOnFocus: true,
+                    className: "rounded",
+                    onClick: function() {}
+                }).showToast();
+            }
+
         </script>
 
         <!-- Core theme JS-->

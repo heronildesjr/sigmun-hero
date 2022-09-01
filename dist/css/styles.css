@@ -11323,10 +11323,6 @@ html, body {
   line-height: normal !important;
 }
 
-.tooltip-arrow {
-  top: 0 !important;
-}
-
 /*header*/
 #sm-hero-demo__header {
   position: relative;
