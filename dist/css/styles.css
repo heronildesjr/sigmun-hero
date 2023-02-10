@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * SIGMun Components - SIGMun Hero Package v0.0.1 (undefined)
-* Copyright 2022-2022 Heronildes Junior
+* Copyright 2022-2023 Heronildes Junior
 * Licensed under MIT (https://github.com/heronildesjr/sigmun-hero/blob/master/LICENSE)
 */
 /*!
@@ -11522,23 +11522,24 @@ html, body {
   position: relative;
   font-size: 0.8rem;
   margin-bottom: -1px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  border-left: 3px solid #064d9d;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.08);
+  border-left: 3px solid rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
 
 .sm-hero__sidenav .sm-hero__sidenav-menu .nav .nav-link:hover {
-  background: #004ea8 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   color: #FFF;
   transition: all 0.1s linear;
-  border-left: 5px solid #0061D0 !important;
+  border-left: 5px solid rgba(0, 0, 0, 0.5) !important;
 }
 
 .nav-link:focus {
   color: #FFF !important;
-  background: #002b5d;
-  border-left: 5px solid #001f43 !important;
+  background: rgba(0, 0, 0, 0.3);
+  border-left: 5px solid rgba(0, 0, 0, 0.5) !important;
 }
 
 .svg-inline--fa {
@@ -11566,13 +11567,19 @@ html, body {
 
 .sm-hero__sidenav .sm-hero__sidenav-menu .nav .collapse.show .nav-link {
   padding-left: 1.5rem !important;
+  border-left: 10px solid rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.1s linear;
+}
+
+.sm-hero__sidenav .sm-hero__sidenav-menu .nav .collapse.show .nav-link:hover {
+  border-left: 12px solid rgba(0, 0, 0, 0.15) !important;
   transition: all 0.1s linear;
 }
 
 .nav-link[aria-expanded=true] {
   color: #FFF !important;
-  background: #001D3F;
-  border-left: 5px solid #001329 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-left: 5px solid rgba(0, 0, 0, 0.5) !important;
 }
 
 .sm-hero__sidenav-menu-nested .collapse.show .nav-link {
