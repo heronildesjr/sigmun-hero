@@ -11,16 +11,22 @@ module.exports = function renderScripts() {
 
     sh.cp('-R', sourcePath, destPath)
 
-    const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
-    const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/scripts.js');
+    const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/sigmun.js');
+    const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/sigmun.js');
+
+    // copy bootstrap bundle js
+    const sourcePathBootstrapJS = upath.resolve(upath.dirname(__filename), '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
+
+    // const destPathBootstrapJS = upath.resolve(upath.dirname(__filename), '../dist/js/bootstrap.bundle.min.js');
 
     const copyright = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
+* Start sigmun with Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
 * Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
 * Licensed under ${packageJSON.license} (https://github.com/heronildesjr/${packageJSON.name}/blob/master/LICENSE)
 */
 `
     const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
+    const bootstrapBundle = fs.readFileSync(sourcePathBootstrapJS);
 
-    fs.writeFileSync(destPathScriptsJS, copyright + scriptsJS);
+    fs.writeFileSync(destPathScriptsJS, copyright + bootstrapBundle + scriptsJS);
 };

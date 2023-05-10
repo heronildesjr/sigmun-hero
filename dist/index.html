@@ -549,9 +549,8 @@
 
         </div>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <!-- Core theme JS (inclui bootstrap)-->
+        <script type="module" src="js/sigmun.js"></script>
 
         <!-- DataTables.net -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
@@ -559,29 +558,5 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 
-        <!-- main script -temp -->
-        <script>
-            $(document).ready(function() {
-                $('#demo-datatable').DataTable({
-                    paging: true,
-                    ordering: true,
-                    info: true,
-                    language: {
-                        search: 'Placeholder exemplo...',
-                        url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/pt-BR.json',
-                    },
-                });
-
-                // margin top same as header height to avoid overlap on resize
-                jQuery(window).on('resize', function() {
-                    $('.sm-hero__header-title').css('margin-top', jQuery('#main-navbar').outerHeight() + 3 + 'px');
-                });
-
-                $('.sm-hero__header-title').css('margin-top', jQuery('#main-navbar').outerHeight() + 3 + 'px');
-            });
-        </script>
-
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
