@@ -12251,3 +12251,20 @@ table.dataTable tfoot th {
 .bd-sidebar-toggle:not(.collapsed) .bi-collapse {
   display: inline-block;
 }
+
+/* custom scroll */
+/* width */
+.sm-hero__sidenav::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.sm-hero__sidenav::-webkit-scrollbar-track {
+  background: #003f87;
+}
+
+/* Handle */
+.sm-hero__sidenav::-webkit-scrollbar-thumb {
+  background: #001b3a;
+  border-radius: 20px;
+}
