@@ -250,13 +250,13 @@ html, body {
     transition: all .2s ease-in-out;
 }
 
-.sm-hero__sidenav .sm-hero__sidenav-menu .nav .nav-link:hover {
+.sm-hero__sidenav .sm-hero__sidenav-menu .nav .nav-link:hover, .sm-hero__sidenav .sm-hero__sidenav-menu .nav .nav-link.active {
     background: rgba(0, 0, 0, 0.3) !important;
     color: #FFF;
     transition: all .1s linear;
     border-left: 5px solid rgba(0, 0, 0, 0.5) !important;
 }
-.nav-link:focus{
+.sm-hero__sidenav .sm-hero__sidenav-menu .nav .nav-link:focus{
     color: #FFF !important;
     background: rgba(0, 0, 0, 0.3);
     border-left: 5px solid rgba(0, 0, 0, 0.5) !important;
@@ -287,7 +287,7 @@ html, body {
     transition: all .1s linear;
 }
 
-.sm-hero__sidenav .sm-hero__sidenav-menu .nav .collapse.show .nav-link:hover {
+.sm-hero__sidenav .sm-hero__sidenav-menu .nav .collapse.show .nav-link:hover, .sm-hero__sidenav .sm-hero__sidenav-menu .nav .collapse.show .nav-link.active {
     border-left: 12px solid rgba(0, 0, 0, 0.15) !important;
     transition: all .1s linear;
 }
@@ -453,4 +453,32 @@ table.dataTable tfoot th {
 .sm-hero__sidenav::-webkit-scrollbar-thumb {
     background: #001b3a;
     border-radius: 20px;
+}
+
+// animations
+
+// fade out
+.fade-out{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.fade-out.show{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+// fade in
+.fade-in{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    animation: fade .2s ease-in-out;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
 }
