@@ -11863,7 +11863,7 @@ body, html {
 .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle, .btn-primary:active:focus, .btn-primary:active:hover,
 .btn-primary.active:focus, .btn-primary.active:hover, .show > .btn-primary.dropdown-toggle:focus,
-.show > .btn-primary.dropdown-toggle:hover {
+.show > .btn-primary.dropdown-toggle:hover, .text-bg-primary {
   background-color: #003169 !important;
   border-color: #003169 !important;
   color: #fff !important;
@@ -12154,7 +12154,7 @@ html, body {
 }
 
 /*demo main content*/
-section > h2, section > .h2 {
+section.sm-hero__section > h2.sm-hero__section-title, section.sm-hero__section > .sm-hero__section-title.h2 {
   color: #023e84;
   font-size: 1.5em;
 }
