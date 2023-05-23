@@ -23,9 +23,9 @@ module.exports = function renderScripts() {
 
     // const destPathBootstrapJS = upath.resolve(upath.dirname(__filename), '../dist/js/bootstrap.bundle.min.js');
 
-    const copyright = `/*!
+    const copyrightJs = `/*!
 * Start sigmun with Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-* Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
+* Copyright 2023-${new Date().getFullYear()} ${packageJSON.author}
 * Licensed under ${packageJSON.license} (https://github.com/heronildesjr/${packageJSON.name}/blob/master/LICENSE)
 */
 `
@@ -33,7 +33,7 @@ module.exports = function renderScripts() {
     const bootstrapBundle = fs.readFileSync(sourcePathBootstrapJS);
     const ts = fs.readFileSync(sourceTs);
 
-    fs.writeFileSync(destPathScriptsJS, copyright + bootstrapBundle + scriptsJS);
+    fs.writeFileSync(destPathScriptsJS, copyrightJs + bootstrapBundle + scriptsJS);
 
     // create TS file
     fs.writeFileSync(destPathScriptsTs, ts);
