@@ -13,9 +13,13 @@ module.exports = function renderScripts() {
 
     const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/sigmun.js');
     const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/sigmun.js');
+    const destPathScriptsTs = upath.resolve(upath.dirname(__filename), '../dist/js/sigmun.d.ts');
 
     // copy bootstrap bundle js
     const sourcePathBootstrapJS = upath.resolve(upath.dirname(__filename), '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
+
+    // ts compile
+    const sourceTs = upath.resolve(upath.dirname(__filename), '../src/js/sigmun.d.ts');
 
     // const destPathBootstrapJS = upath.resolve(upath.dirname(__filename), '../dist/js/bootstrap.bundle.min.js');
 
@@ -27,6 +31,10 @@ module.exports = function renderScripts() {
 `
     const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
     const bootstrapBundle = fs.readFileSync(sourcePathBootstrapJS);
+    const ts = fs.readFileSync(sourceTs);
 
     fs.writeFileSync(destPathScriptsJS, copyright + bootstrapBundle + scriptsJS);
+
+    // create TS file
+    fs.writeFileSync(destPathScriptsTs, ts);
 };
