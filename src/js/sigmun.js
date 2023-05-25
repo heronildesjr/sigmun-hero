@@ -49,12 +49,19 @@ const sigmun = {
                 }, timeout);
             }
         },
-        toggleAside: () => {
-            asideElement.addEventListener('click', function() {
-                // Remove a classe "expanded" do <aside> ao remover o mouse dele
-                asideElement.classList.toggle('expanded');
-                }
-            );
+        toggleAside: (asideElement) => {
+
+            var asideShowElements;
+
+            if (!asideElement) {
+                asideElement = document.querySelector('aside.expansible');
+                asideShowElements = document.querySelectorAll('aside.expansible .show');
+            } else {
+                asideElement = document.querySelector(asideElement);
+                asideShowElements = document.querySelectorAll(asideElement + ' .show');
+            }
+
+            asideElement.classList.toggle('expanded');
         }
     }
 
@@ -77,6 +84,7 @@ asideElement.addEventListener('mouseout', function() {
   asideElement.classList.remove('expanded');
 });
 
-
+// declare sigmun as global variable
+window.sigmun = sigmun;
 // export as module
 export default sigmun;
