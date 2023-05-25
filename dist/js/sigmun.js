@@ -74,19 +74,23 @@ const sigmun = {
 
 // aside expansível (expansible)
 // Obtém a referência para o elemento <aside>
-var asideElement = document.querySelector('aside.expansible');
+const asideElement = document.querySelector('aside.expansible') ?? null;
 
 // Adiciona um ouvinte de evento para o evento "mouseover"
-asideElement.addEventListener('mouseover', function() {
-  // Adiciona a classe "expanded" ao <aside> ao passar o mouse sobre ele
-  asideElement.classList.add('expanded');
-});
+if (asideElement) {
 
-// Adiciona um ouvinte de evento para o evento "mouseout"
-asideElement.addEventListener('mouseout', function() {
-  // Remove a classe "expanded" do <aside> ao remover o mouse dele
-  asideElement.classList.remove('expanded');
-});
+    asideElement.addEventListener('mouseover', function() {
+    // Adiciona a classe "expanded" ao <aside> ao passar o mouse sobre ele
+    asideElement.classList.add('expanded');
+    });
+
+    // Adiciona um ouvinte de evento para o evento "mouseout"
+    asideElement.addEventListener('mouseout', function() {
+    // Remove a classe "expanded" do <aside> ao remover o mouse dele
+    asideElement.classList.remove('expanded');
+    });
+
+}
 
 
 // export as module
