@@ -20,7 +20,8 @@
             <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light border-bottom">
                 <div class="container-fluid">
                     <div>
-                        <button class="navbar-toggler d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#layoutSidenav_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <!-- <button class="navbar-toggler d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#layoutSidenav_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+                        <button class="navbar-toggler d-inline-block" type="button" onclick="sigmun.functions.toggleAside()" ><span class="navbar-toggler-icon"></span></button>
                         <a class="navbar-brand" href="#"><img id="main-logo" src="assets/main-logo.png" class="img-fluid" style="max-height: 40px;" alt=""></a>
                     </div>
 
@@ -135,7 +136,7 @@
 
         <div id="container-center" class="container-fluid p-0 bd-layout flex-column flex-sm-column flex-md-row">
 
-            <aside class="collapse show" id="layoutSidenav_nav">
+            <aside class="expansible mini-aside-static" id="layoutSidenav_nav">
                 <div class="sm-hero__sidenav">
                     <div class="sm-hero__sidenav-menu">
                         <nav class="nav bd-links">
@@ -550,7 +551,7 @@
         </div>
 
         <!-- Core theme JS (inclui bootstrap)-->
-        <script type="module" src="js/sigmun.js"></script>
+        <script src="js/sigmun.js"></script>
 
         <!-- DataTables.net -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
