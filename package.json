@@ -44,5 +44,13 @@
         "sass": "1.49.9",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
+    },
+    "exports": {
+        "main": "./dist/sigmun.js",
+        "style": "./dist/sigmun.css",
+        "files": [
+            "./dist"
+        ],
+        "types": "./dist/sigmun.d.ts"
     }
 }
