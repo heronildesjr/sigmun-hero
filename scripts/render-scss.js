@@ -7,7 +7,7 @@ const postcss = require('postcss')
 const sass = require('sass');
 const sh = require('shelljs');
 
-const stylesPath = '../src/scss/styles.scss';
+const stylesPath = '../src/scss/sigmun-default.scss';
 const destPath = upath.resolve(upath.dirname(__filename), '../dist/css/sigmun-default.css');
 
 module.exports = function renderSCSS() {
