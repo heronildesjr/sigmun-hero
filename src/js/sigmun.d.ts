@@ -1,4 +1,4 @@
-export const sigmun = {
+const sigmun = {
     functions: {
         showAlert(message: string, type: string, container: string, timeout: number): void
     }
@@ -7,3 +7,6 @@ export const sigmun = {
 
 // export as namespace
 export as namespace sigmun;
+
+// export as default
+export default sigmun;
