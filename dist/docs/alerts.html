@@ -226,7 +226,7 @@
                                       <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                      <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React-native (em breve)</button>
+                                      <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                       <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
@@ -260,7 +260,30 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+                                        <div class="pt-3">
+                                            <!-- barra com copy to clipboard -->
+                                            <div class="d-flex p-1 border" style="background-color: #41464b1d;">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Copiar código HTML" onclick="copyToClipboard('#AlertshtmlViewer')"><i class="bi bi-clipboard"></i> Copiar</button>
+                                                </div>
+                                            </div>
 
+<pre><code id="AlertshtmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;primary&quot;</span>&gt;</span>
+        Mensagem simples de alerta
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;secondary&quot;</span>&gt;</span>
+        Mensagem simples de alerta com cor secundária
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;warning&quot;</span>&gt;</span>
+        Mensagem simples de alerta com cor de &quot;atenção&quot;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;danger&quot;</span>&gt;</span>
+        Mensagem simples de alerta com cor de &quot;erro&quot;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;success&quot;</span>&gt;</span>
+        Mensagem simples de alerta com cor de &quot;sucesso&quot;
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span>&gt;</span></code></pre>
+</div>
                                     </div>
 
                                 </div>
@@ -285,10 +308,10 @@
                                     <h3 class="fs-6 fw-bold">Código</h3>
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="html-tab2" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
+                                          <button class="nav-link active" id="html-tab2" data-bs-toggle="tab" data-bs-target="#alertTabHtml2" type="button" role="tab" aria-controls="alertTabHtml2" aria-selected="true">HTML</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React-native (em breve)</button>
+                                          <button class="nav-link" id="react-tab2" data-bs-toggle="tab" data-bs-target="#react-tab-pane2" type="button" role="tab" aria-controls="react-tab-pane2" aria-selected="false">React</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
                                           <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
@@ -313,8 +336,23 @@
 
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+                                        <div class="tab-pane fade" id="react-tab-pane2" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+                                            <div class="pt-3">
+                                                <!-- barra com copy to clipboard -->
+                                                <div class="d-flex p-1 border" style="background-color: #41464b1d;">
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Copiar código HTML" onclick="copyToClipboard('#AlertshtmlViewer2')"><i class="bi bi-clipboard"></i> Copiar</button>
+                                                    </div>
+                                                </div>
 
+                                                <pre>
+<code id="AlertshtmlViewer2" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;warning&quot;</span><span style="color:rgb(255, 157, 164); font-weight:400;"> enableClose</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">strong</span>&gt;</span>Atenção!<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">strong</span>&gt;</span> Este alerta pode ser fechado clicando no botão <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">i</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;bi bi-x&quot;</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">i</span>&gt;</span> ou clicando fora do alerta.
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Alert</span>&gt;</span></code></pre>
+    </code></pre>
+
+
+                                            </div>
                                         </div>
 
                                     </div>
@@ -343,17 +381,17 @@
                                             <h3 class="fs-6 fw-bold">Código</h3>
                                             <ul class="nav nav-tabs" role="tablist">
                                                 <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="html-tab2" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
+                                                <button class="nav-link active" id="html-tab3" data-bs-toggle="tab" data-bs-target="#alertTabHtml3" type="button" role="tab" aria-controls="alertTabHtml3" aria-selected="true">HTML</button>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
-                                                <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React-native (em breve)</button>
+                                                <button class="nav-link" id="react-tab3" data-bs-toggle="tab" data-bs-target="#react-tab-pane3" type="button" role="tab" aria-controls="react-tab-pane3" aria-selected="false">React</button>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
                                                 <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
                                                 </li>
                                             </ul>
                                             <div class="tab-content">
-                                                <div class="tab-pane fade show active" id="alertTabHtml2" role="tabpanel" aria-labelledby="html-tab2" tabindex="0">
+                                                <div class="tab-pane fade show active" id="alertTabHtml3" role="tabpanel" aria-labelledby="html-tab3" tabindex="0">
                                                     <div class="pt-3">
                                                         <!-- barra com copy to clipboard -->
                                                         <div class="d-flex p-1 border" style="background-color: #41464b1d;">
@@ -370,8 +408,29 @@
                                                            </code></pre>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+                                                <div class="tab-pane fade" id="react-tab-pane3" role="tabpanel" aria-labelledby="react-tab3" tabindex="0">
+                                                    <div class="pt-3">
+                                                        <!-- barra com copy to clipboard -->
+                                                        <div class="d-flex p-1 border" style="background-color: #41464b1d;">
+                                                            <div class="btn-group" role="group">
+                                                                <button type="button" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Copiar código HTML" onclick="copyToClipboard('#AlertshtmlViewer2')"><i class="bi bi-clipboard"></i> Copiar</button>
+                                                            </div>
+                                                        </div>
 
+                                                        <pre>
+<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- chamada do hook useProgrammableAlert --&gt;</span>
+[AlertContainer, showAlert] = useProgrammableAlert()
+
+<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- container do alerta --&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">AlertContainer</span> /&gt;</span>
+
+<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- chamada da função showAlert --&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">onClick</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">{()</span> =&gt;</span> 
+    showAlert(&#x27;Mensagem personalizada&#x27;, &#x27;primary&#x27;, 4000)}
+&gt;
+    Mostrar Alerta
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span></code></pre>
+                                                    </div>
                                                 </div>
 
                                             </div>
