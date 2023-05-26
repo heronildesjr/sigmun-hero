@@ -12380,4 +12380,5 @@ pre code {
   white-space: pre;
   width: -moz-fit-content !important;
   width: fit-content !important;
+  min-width: 100% !important;
 }
