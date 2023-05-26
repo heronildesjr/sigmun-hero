@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SIGMun Components pack - Alerts</title>
+        <title>SIGMun Components pack - Cards</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -158,12 +158,12 @@
                                     <div class="collapse show" id="collapseComponents" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                         <nav class="sm-hero__sidenav-menu-nested nav">
                                             <!-- <a class="nav-link" href="crud.html">- CRUD</a> -->
-                                            <a class="nav-link active" href="alerts.html">Alerts</a>
+                                            <a class="nav-link " href="alerts.html">Alerts</a>
                                             <a class="nav-link" href="badges.html">Badges</a>
                                             <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
                                             <a class="nav-link" href="button-group.html">Button Group</a>
                                             <a class="nav-link" href="buttons.html">Buttons</a>
-                                            <a class="nav-link" href="#card">Card</a>
+                                            <a class="nav-link active" href="cards.html">Cards</a>
                                             <a class="nav-link" href="#carousel">Carousel</a>
                                             <a class="nav-link" href="#datatable">Datatable</a>
                                             <a class="nav-link" href="#dropdowns">Dropdowns</a>
@@ -190,33 +190,51 @@
                 <div class="container-fluid">
 
 
-                    <h2 class="text-primary fs-4 fw-bold">Alerts / Alertas</h2>
+                    <h2 class="text-primary fs-4 fw-bold">Cards</h2>
 
                     <div class="card p-3">
                         <article>
                             <header>
-                                <p>Os alertas são componentes de interface de usuário que permitem exibir mensagens de aviso ou informação para o usuário. Eles são úteis para notificar o usuário sobre algo que ele precisa saber ou para fornecer feedback sobre uma ação que ele acabou de realizar.</p>
-                                <p>Os alertas podem ser usados para exibir mensagens informativas, avisos, mensagens de sucesso ou mensagens de erro. Eles podem ser exibidos como um alerta de página inteira ou incorporados em um formulário ou página.</p>
+                                <p>
+                                    Os componentes de cartão (Card) são elementos versáteis e amplamente utilizados em interfaces de usuário para exibir conteúdo de forma organizada e atraente. Com os cartões, você pode apresentar informações, imagens, títulos, descrições e muito mais.
+                                </p>
+                                <p>
+                                    Os cartões são altamente personalizáveis e adaptáveis a diferentes necessidades de design. Eles oferecem flexibilidade na apresentação de conteúdo em uma única unidade visual, permitindo que você agrupe informações relacionadas ou destaque elementos importantes. Além disso, os cartões podem ser combinados com outros componentes para criar layouts complexos e responsivos.
+                                </p>
                             </header>
 
                             <section class="border rounded-1 p-3">
                                 <h3 class="fs-6 fw-bold mb-3">Exemplos</h3>
 
-                                <div class="alert alert-primary" role="alert">
-                                    Mensagem simples de alerta
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://via.placeholder.com/280x180" class="card-img-top" alt="...">
+
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Link</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="alert alert-secondary" role="alert">
-                                    Mensagem simples de alerta com cor secundária
+
+
+                                <div class="card w-50 mx-auto">
+                                    <div class="card-header">
+                                        Featured
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Título do card</h5>
+                                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                      <a href="#" class="btn btn-primary">Link</a>
+                                    </div>
                                 </div>
-                                <div class="alert alert-warning" role="alert">
-                                    Mensagem simples de alerta com cor de "atenção"
-                                </div>
-                                <div class="alert alert-danger" role="alert">
-                                    Mensagem simples de alerta com cor de "erro"
-                                </div>
-                                <div class="alert alert-success" role="alert">
-                                    Mensagem simples de alerta com cor de "sucesso"
-                                </div>
+
+
                             </section>
 
                             <section class="border rounded-1 p-3 my-4">
@@ -277,6 +295,8 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                 </section>
+
+
 
 
 

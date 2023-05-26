@@ -47,14 +47,14 @@
         "upath": "2.0.1"
     },
     "exports": {
-        "main": "./dist/sigmun.js",
-        "style": "./dist/sigmun-default.css",
+        "main": "./dist/js/sigmun.js",
+        "style": "./dist/css/sigmun-default.css",
         "files": [
             "./dist"
         ],
-        "types": "./dist/sigmun.d.ts",
-        "default": "./dist/sigmun.js",
-        "import": "./dist/sigmun.js",
-        "require": "./dist/sigmun.js"
+        "types": "./dist/js/sigmun.d.ts",
+        "default": "./dist/js/sigmun.js",
+        "import": "./dist/js/sigmun.js",
+        "require": "./dist/js/sigmun.js"
     }
 }
