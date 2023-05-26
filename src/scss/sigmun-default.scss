@@ -580,3 +580,9 @@ aside.expansible.expanded.mini-aside-static {
 aside {
     transition: width 0.3s ease;
 }
+
+/* fix pre code */
+pre code {
+    white-space: pre;
+    width: fit-content !important;
+}
