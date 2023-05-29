@@ -25,3 +25,9 @@
 #bt-examples button, #bt-examples .btn {
     margin: 0 5px;
 }
+
+/*docs-cards-example*/
+
+#docs-cards-example .card{
+    margin-bottom: 2rem;
+}
