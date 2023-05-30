@@ -12385,6 +12385,6 @@ pre code {
 
 /* owlCarousel mods */
 .owl-carousel .owl-prev span, .owl-carousel .owl-next span {
-  padding: 0.5rem;
+  padding: 0.3rem;
   font-size: 1rem;
 }
