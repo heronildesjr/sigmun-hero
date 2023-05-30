@@ -587,3 +587,9 @@ pre code {
     width: fit-content !important;
     min-width: 100% !important;
 }
+
+/* owlCarousel mods */
+.owl-carousel .owl-prev span, .owl-carousel .owl-next span {
+    padding: .5rem;
+    font-size: 1rem;
+}
