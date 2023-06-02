@@ -12388,3 +12388,83 @@ pre code {
   padding: 0.3rem;
   font-size: 1rem;
 }
+
+/* input switch */
+/* Estilo iOS */
+.sm-hero-switch__container {
+  width: 60px;
+}
+
+.sm-hero-switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+.sm-hero-switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.sm-hero-switch--shadow + label {
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+
+.sm-hero-switch--shadow + label:before,
+.sm-hero-switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+
+.sm-hero-switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+
+.sm-hero-switch--shadow + label:after {
+  width: 28px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.sm-hero-switch--shadow:checked + label:before {
+  background-color: #023e84;
+}
+
+.sm-hero-switch--shadow:checked + label:after {
+  transform: translateX(30px);
+}
+
+/* checkbox */
+.form-check-input:checked {
+  background-color: #023e84;
+  border-color: #023e84;
+}
+
+/* range sliders */
+.form-range::-webkit-slider-thumb {
+  background: #023e84;
+}
+
+.form-range::-webkit-slider-thumb:hover {
+  translate: scale(1.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}

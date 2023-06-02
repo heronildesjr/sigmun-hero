@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SIGMun Components pack - Carousel</title>
+        <title>SIGMun Components pack - Dropdowns</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -164,10 +164,10 @@
                                             <a class="nav-link" href="button-group.html">Button Group</a>
                                             <a class="nav-link" href="buttons.html">Buttons</a>
                                             <a class="nav-link" href="cards.html">Cards</a>
-                                            <a class="nav-link active" href="carousel.html">Carousel</a>
+                                            <a class="nav-link" href="carousel.html">Carousel</a>
                                             <a class="nav-link" href="datatable.html">DataTable</a>
                                             <a class="nav-link" href="dropdowns.html">Dropdowns</a>
-                                            <a class="nav-link" href="inputs.html">Inputs</a>
+                                            <a class="nav-link active" href="inputs.html">Inputs</a>
                                             <a class="nav-link" href="#list-group">List group</a>
                                             <a class="nav-link" href="#modal">Modal</a>
                                             <a class="nav-link" href="#navs-tabs">Navs &amp; tabs</a>
@@ -190,80 +190,179 @@
                 <div class="container-fluid">
 
 
-                    <h2 class="text-primary fs-4 fw-bold">Carousel</h2>
+                    <h2 class="text-primary fs-4 fw-bold">Inputs</h2>
 
                     <div class="card p-3">
                         <article>
                             <header>
                                 <p>
-                                    Os elementos Carousel são elementos interativos que permitem exibir vários itens de conteúdo em um espaço limitado, permitindo que os usuários naveguem facilmente por eles. Com o plugin Owl Carousel, você pode criar belos elementos Carousel de maneira simples e flexível.
+                                    Os campos de entrada, também conhecidos como inputs, são elementos essenciais em formulários web, permitindo que os usuários forneçam informações de maneira interativa. Com o suporte ao Bootstrap, você pode estilizar e aprimorar a aparência dos campos de entrada de forma consistente e moderna.
                                 </p>
                                 <p>
-                                    Neste pacote além do bootstrap, também utilizamos o <a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel2</a>, uma biblioteca JavaScript poderosa e fácil de usar que fornece recursos avançados de carrossel, como navegação por setas, paginação, animações suaves e suporte a dispositivos móveis. Com ele, você pode exibir imagens, vídeos, textos e outros elementos de forma dinâmica e atraente.
+                                    Os inputs do Bootstrap oferecem uma ampla variedade de tipos e estilos para atender às necessidades específicas do seu formulário. Você pode usar inputs de texto simples para capturar nomes, endereços de e-mail, senhas e outras informações. Além disso, há inputs numéricos para valores monetários, datas e outros dados numéricos.
                                 </p>
-                                <p>Para esse plugin utilizamos a biblioteca <a target="_blank" href="https://code.jquery.com/">jQuery</a>, abaixo no exemplo de código há os links necessários para funcionamento.</p>
                             </header>
 
                             <section id="docs-carousel-example" class="border rounded-1 p-3">
                                 <h3 class="fs-6 fw-bold mb-3">Exemplos</h3>
 
+                                        <p class="mb-2">básico</p>
+                                        <div class="row mb-4">
+                                            <div class="col">
+                                                <input type="text" placeholder="Input básico" class="form-control" aria-label="Input básico" aria-describedby="Input-basico">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Input desabilitado" class="disabled form-control" aria-label="Input desabilitado" aria-describedby="input-desabilitado" disabled>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Input inválido" class="border-danger form-control" aria-label="Input invalido" aria-describedby="input-invalido">
+                                            </div>
+                                        </div>
+                                        <p class="mb-2">básico com "addon"</p>
+                                        <div class="row mb-4">
+                                            <div class="col">
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon2">http://</span>
+                                                    <input type="text" class="form-control" placeholder="site" aria-label="site" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text" id="basic-addon2-1">.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                        <li><hr class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="exampleFormControlInput1" class="form-label">Label + Tipo Email</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                            </div>
+                                            <div class="col">
+                                                <label for="exampleFormControlInput2" class="form-label">Tipo number</label>
+                                                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="Número">
+                                            </div>
+                                            <div class="col">
+                                                <label for="calendar-example-input" class="form-label">Calendar</label>
+                                                <div class="input-group">
+                                                    <input type="date" id="calendar-example-input" class="form-control" placeholder="Calendar" aria-label="calendar" aria-describedby="calendar-example">
+                                                    <!-- <span class="input-group-text btn btn-primary" id="calendar-example"><i class="bi bi-calendar"></i></span> -->
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                <!-- owl carousel example -->
-                                <div id="owl-carousel1" class="owl-carousel owl-theme">
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="https://via.placeholder.com/600x300" alt="">
-                                    </div>
-                                </div>
+                                        <hr>
 
-                                <!-- import owlCarousel2 cdn + jquery -->
-                                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-                                <!-- import owlCarousel2 css + owl theme default -->
-                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+                                        <p class="mb-2">Switchs</p>
+                                        <div class="row">
 
-                                <!-- owl carousel script -->
-                                <script>
-                                    $(document).ready(function(){
-                                        $("#owl-carousel1").owlCarousel({
-                                            loop:true,
-                                            margin:10,
-                                            nav:true,
-                                            dots: true,
-                                            responsive:{
-                                                0:{
-                                                    items:1
-                                                },
-                                                600:{
-                                                    items:3
-                                                },
-                                                1000:{
-                                                    items:5
-                                                }
-                                            }
-                                        });
-                                    });
-                                </script>
+                                            <!-- Input Switch -->
+                                            <p class="mb-2">IOS + flat boostrap</p>
+                                            <div class="sm-hero-switch__container me-3">
+                                                <input id="sm-hero-switch-shadow" class="sm-hero-switch sm-hero-switch--shadow" type="checkbox" />
+                                                <label for="sm-hero-switch-shadow"></label>
+                                            </div>
+
+                                            <div class="ms-4 col">
+
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                                                    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                                    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <hr>
+
+                                        <p class="mb-2">Checkboxes</p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Checkbox padrão
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Checkbox marcado
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Checkbox desabilitado
+                                            </label>
+                                        </div>
+
+                                        <hr>
+
+                                        <p class="mb-2">Radios</p>
 
 
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Radio padrão
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Radio marcado
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled2" disabled>
+                                            <label class="form-check-label" for="flexRadioDisabled2">
+                                                Radio desabilitado
+                                            </label>
+                                        </div>
+
+
+                                        <hr>
+
+                                        <p class="mb-2">Range Sliders</p>
+
+                                        <!-- range slider -->
+                                        <div class="row">
+                                            <div class="col-6 offset-3">
+                                                <label for="customRange1" class="form-label">Exemplo básico</label>
+                                                <input type="range" class="form-range" id="customRange1">
+
+                                                <label for="disabledRange" class="form-label">Disabled range</label>
+                                                <input type="range" class="form-range" id="disabledRange" disabled>
+
+                                                <label for="customRange3" class="form-label">Steps range</label>
+                                                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                                            </div>
+                                        </div>
 
                             </section>
 
@@ -290,61 +389,8 @@
                                                 </div>
                                             </div>
 
-<pre>
-<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- owl carousel example --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;owl-carousel1&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;owl-carousel owl-theme&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 255, 255); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;item&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">img</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://via.placeholder.com/600x300&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">alt</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+                                            <!-- código html -->
 
-<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- import owlCarousel2 cdn + jquery --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">script</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot;</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">script</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">script</span> <span style="color:rgb(255, 255, 255); font-weight:400;">src</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js&quot;</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">script</span>&gt;</span>
-<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- import owlCarousel2 css + owl theme default --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">link</span> <span style="color:rgb(255, 255, 255); font-weight:400;">rel</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;stylesheet&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css&quot;</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">link</span> <span style="color:rgb(255, 255, 255); font-weight:400;">rel</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;stylesheet&quot;</span> <span style="color:rgb(255, 255, 255); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css&quot;</span>&gt;</span>
-
-<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- owl carousel script --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">script</span>&gt;</span><span style="color:rgb(255, 255, 255); font-weight:400;">
-    $(<span class="hljs-variable language_">document</span>).<span class="hljs-title function_">ready</span>(<span style="color:rgb(235, 187, 255); font-weight:400;">function</span>(<span style="color:rgb(255, 197, 143); font-weight:400;"></span>){
-        $(<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#owl-carousel1&quot;</span>).<span class="hljs-title function_">owlCarousel</span>({
-            <span style="color:rgb(255, 255, 255); font-weight:400;">loop</span>:<span style="color:rgb(255, 197, 143); font-weight:400;">true</span>,
-            <span style="color:rgb(255, 255, 255); font-weight:400;">margin</span>:<span style="color:rgb(255, 197, 143); font-weight:400;">10</span>,
-            <span style="color:rgb(255, 255, 255); font-weight:400;">nav</span>:<span style="color:rgb(255, 197, 143); font-weight:400;">true</span>,
-            <span style="color:rgb(255, 255, 255); font-weight:400;">dots</span>: <span style="color:rgb(255, 197, 143); font-weight:400;">true</span>,
-            <span style="color:rgb(255, 255, 255); font-weight:400;">responsive</span>:{
-                <span style="color:rgb(255, 197, 143); font-weight:400;">0</span>:{
-                    <span style="color:rgb(255, 255, 255); font-weight:400;">items</span>:<span style="color:rgb(255, 197, 143); font-weight:400;">1</span>
-                },
-                <span style="color:rgb(255, 197, 143); font-weight:400;">600</span>:{
-                    <span style="color:rgb(255, 255, 255); font-weight:400;">items</span>:<span style="color:rgb(255, 197, 143); font-weight:400;">3</span>
-                },
-                <span style="color:rgb(255, 197, 143); font-weight:400;">1000</span>:{
-                    <span style="color:rgb(255, 255, 255); font-weight:400;">items</span>:<span style="color:rgb(255, 197, 143); font-weight:400;">5</span>
-                }
-            }
-        });
-    });
-</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">script</span>&gt;</span></code></pre>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
