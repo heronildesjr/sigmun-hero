@@ -330,7 +330,7 @@
                                       <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                      <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React-native (em breve)</button>
+                                      <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                       <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
@@ -471,6 +471,101 @@
                                     </div>
                                     <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
 
+                                        <pre>
+<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 255, 255); font-weight:400;">{/* Básico */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span> <span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Action</span>&gt;</span>}&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span> <span class="hljs-attr">split</span> /&gt;</span>}
+button={<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+    {/* Dropup */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;top&quot;</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span>&gt;</span>Dropup<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Action</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+    {/* Split Dropup */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;top&quot;</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span> <span class="hljs-attr">split</span> /&gt;</span>}
+button={<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>Split Dropup<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+    {/* Dropend */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;right&quot;</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span>&gt;</span>Dropend<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Action</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+    {/* Split Dropend */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;right&quot;</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span> <span class="hljs-attr">split</span> /&gt;</span>}
+button={<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>Split Dropend<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+    {/* Dropstart */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;left&quot;</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span>&gt;</span>Dropstart<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Action</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span>
+
+    {/* Split Dropstart */}
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Menu</span>
+<span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;left&quot;</span>
+<span class="hljs-attr">action</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dropdown.Action</span> <span class="hljs-attr">split</span> /&gt;</span>}
+button={<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>Split Dropstart<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>}
+&gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Divider</span> /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Separated Link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Menu</span>&gt;</span></span></code></pre>
                                     </div>
 
                                 </div>
