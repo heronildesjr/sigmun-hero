@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SIGMun Components pack - List Groups</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/sigmun-default.css" rel="stylesheet" />
+        <link href="../css/docs.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="sm-hero-demo__header">
+            <div class="custom-border"></div>
+            <!-- Responsive navbar-->
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light border-bottom">
+                <div class="container-fluid">
+                    <div>
+                        <button class="navbar-toggler d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#layoutSidenav_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <a class="navbar-brand" href="#"><img id="main-logo" src="../assets/main-logo.png" class="img-fluid" style="max-height: 40px;" alt=""></a>
+                    </div>
+
+                    <div class="d-none d-md-flex flex-grow-1 mx-5 justify-content-center">
+                        <form class="col-md-10 col-offset-1">
+                            <input id="sigmun-hero-search-input" type="text" name="" class="form-control" placeholder="Digite aqui sua busca">
+                        </form>
+                    </div>
+
+                    <div class="d-flex flex-grow-1 flex-sm-grow-0 flex-grow-md-0 justify-content-end">
+
+                        <div class="d-flex align-items-center">
+
+                            <nav class="nav-top-right-container">
+                                <ul class="nav-top-right list-unstyled list-inline mb-0">
+
+                                    <li class="nav-top-right__item position-relative" data-bs-toggle="tooltip" title="Notificações">
+                                        <a href="#" role="button" class="d-block" id="dropdownNotifications" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-bell"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownNotifications">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> Notificação de exemplo etc etc etc etc etce ted fwsrfeas fsefsefse se f fsefe</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-top-right__item position-relative" data-bs-toggle="tooltip" title="Ajuda">
+                                        <a href="#">
+                                            <i class="bi bi-question-circle"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-top-right__item position-relative" data-bs-toggle="tooltip" title="Módulos de Sistema">
+                                        <a href="#" role="button" class="d-block" id="dropdownApps" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownApps">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-pencil"></i> Portal da Pref. de Mossoró</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-search"></i> Portal da Transparência</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-briefcase"></i> Portal do Emprego</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-book"></i> Diário Oficial do Município</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+
+                            <!-- componente -->
+                            <div class="ms-2 sm-hero__avatar position-relative">
+
+                                <div class="bg-info rounded-circle overflow-hidden" data-bs-toggle="tooltip" title="Meu Perfil">
+                                    <a href="#" role="button" class="d-block" id="dropdownAvatar" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <img src="https://via.placeholder.com/40x40" alt="avatar">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownAvatar">
+                                        <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+                                        <li><a class="dropdown-item" href="#">Fazer Logout</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </nav>
+
+            <!-- <div class="sm-hero__header-title shadow-sm">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center collapsed">
+
+                                <button class="d-inline btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3" type="button" data-bs-toggle="collapse" data-bs-target="#layoutSidenav_nav" aria-controls="layoutSidenav_nav" aria-expanded="true" aria-label="Toggle docs navigation">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+                                        <title>Expand</title>
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+                                        <title>Collapse</title>
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+                                    </svg>
+                                </button>
+
+                                <h1 class="sm-hero__title">Módulo de CMS -> Portal da Prefeitura de Mossoró</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </header>
+
+        <div id="container-center" class="container-fluid p-0 bd-layout flex-column flex-sm-column flex-md-row">
+
+            <aside class="collapse show" id="layoutSidenav_nav">
+                <div class="sm-hero__sidenav">
+                    <div class="sm-hero__sidenav-menu">
+                        <nav class="nav bd-links">
+                            <ul class="list-unstyled py-2 p-0">
+                                <li>
+                                    <div class="sm-hero__sidenav-menu-heading">Menu</div>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../docs.html">
+                                        <div class="sm-hero__sidenav-link-icon"><i class="bi bi-house"></i></div>
+                                        Início
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseComponents" aria-expanded="true" aria-controls="collapseComponents">
+                                        <div class="sm-hero__sidenav-link-icon"><i class="bi bi-nut"></i></div>
+                                        Componentes
+                                        <div class="sm-hero__sidenav-collapse-arrow"><svg class="svg-inline--fa fa-angle-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg><!-- <i class="fas fa-angle-down"></i> Font Awesome fontawesome.com --></div>
+                                    </a>
+                                    <div class="collapse show" id="collapseComponents" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sm-hero__sidenav-menu-nested nav">
+                                            <!-- <a class="nav-link" href="crud.html">- CRUD</a> -->
+                                            <a class="nav-link " href="alerts.html">Alerts</a>
+                                            <a class="nav-link" href="badges.html">Badges</a>
+                                            <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
+                                            <a class="nav-link" href="button-group.html">Button Group</a>
+                                            <a class="nav-link" href="buttons.html">Buttons</a>
+                                            <a class="nav-link" href="cards.html">Cards</a>
+                                            <a class="nav-link" href="carousel.html">Carousel</a>
+                                            <a class="nav-link" href="datatable.html">DataTable</a>
+                                            <a class="nav-link" href="dropdowns.html">Dropdowns</a>
+                                            <a class="nav-link" href="inputs.html">Inputs</a>
+                                            <a class="nav-link active" href="list-groups.html">List group</a>
+                                            <a class="nav-link" href="#modal">Modal</a>
+                                            <a class="nav-link" href="#navs-tabs">Navs &amp; tabs</a>
+                                            <a class="nav-link" href="#navbar">Navbar</a>
+                                            <a class="nav-link" href="#offcanvas">Offcanvas</a>
+                                            <a class="nav-link" href="#pagination">Pagination</a>
+                                            <a class="nav-link" href="#popovers">Popovers</a>
+                                            <a class="nav-link" href="#sidebar">Sidebar</a>
+                                            <a class="nav-link" href="#toasts">Toasts</a>
+                                        </nav>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <main id="main-content">
+                <div class="container-fluid">
+
+
+                    <h2 class="text-primary fs-4 fw-bold">List Groups</h2>
+
+                    <div class="card p-3">
+                        <article>
+                            <header>
+                                <p>
+                                    O List Group é um componente versátil do Bootstrap que permite exibir listas de itens de forma organizada e fácil de ler. Com o List Group, você pode criar menus, listas de itens relacionados, feeds de notícias e muito mais.
+                                </p>
+                                <p>
+                                    O List Group oferece uma estrutura limpa e responsiva, facilitando a exibição de informações de forma clara e concisa. Você pode adicionar itens de lista com texto, imagens, botões e até mesmo ícones para fornecer uma experiência visualmente atraente.
+                                </p>
+                            </header>
+
+                            <section id="docs-carousel-example" class="border rounded-1 p-3">
+                                <h3 class="fs-6 fw-bold mb-3">Exemplos</h3>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <!-- básico -->
+                                        <ul class="list-group mb-3">
+                                            <li class="list-group-item">item</li>
+                                            <li class="list-group-item">segundo item</li>
+                                            <li class="list-group-item">terceiro item</li>
+                                            <li class="list-group-item">quarto item</li>
+                                            <li class="list-group-item">quinto item</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col">
+                                        <!-- básico com active -->
+                                        <ul class="list-group mb-3">
+                                            <li class="list-group-item">item</li>
+                                            <li class="list-group-item active">segundo item (ativo)</li>
+                                            <li class="list-group-item">terceiro item</li>
+                                            <li class="list-group-item">quarto item</li>
+                                            <li class="list-group-item">quinto item</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col">
+                                        <!-- básico com active -->
+                                        <!-- com links -->
+                                        <ul class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action">Primeiro item</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Item com estilo primário</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">item com estilo secundário</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">item com estilo success</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">item com estilo danger</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">item com estilo warning</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-info">item com estilo info</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-light">item com estilo light</a>
+                                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">item com estilo dark</a>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <!-- básico com badges -->
+                                    <div class="col">
+                                        <ul class="list-group mb-3">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">item <span class="badge bg-primary rounded-pill">14</span></li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">segundo item <span class="badge bg-primary rounded-pill">01</span></li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">terceiro item <span class="badge bg-primary rounded-pill">08</span></li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">quarto item <span class="badge bg-primary rounded-pill">10</span></li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">quinto item <span class="badge bg-primary rounded-pill">15</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">List group item heading</h5>
+                                                    <small>3 days ago</small>
+                                                </div>
+                                                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                                <small>And some small print.</small>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">List group item heading</h5>
+                                                    <small class="text-body-secondary">3 days ago</small>
+                                                </div>
+                                                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                                <small class="text-body-secondary">And some muted small print.</small>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">List group item heading</h5>
+                                                    <small class="text-body-secondary">3 days ago</small>
+                                                </div>
+                                                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                                <small class="text-body-secondary">And some muted small print.</small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="radio" value="" id="secondCheckboxStretched">
+                                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <section class="border rounded-1 p-3 my-4">
+                                <h3 class="fs-6 fw-bold">Código</h3>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React-native (em breve)</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="alertTabHtml" role="tabpanel" aria-labelledby="html-tab" tabindex="0">
+                                        <div class="pt-3">
+                                            <!-- barra com copy to clipboard -->
+                                            <div class="d-flex p-1 border" style="background-color: #41464b1d;">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Copiar código HTML" onclick="copyToClipboard('#AlertshtmlViewer')"><i class="bi bi-clipboard"></i> Copiar</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- código html -->
+<pre>
+<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;row&quot;</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;col&quot;</span>&gt;</span>
+        <span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- básico --&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group mb-3&quot;</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>segundo item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>terceiro item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>quarto item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>quinto item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;col&quot;</span>&gt;</span>
+        <span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- básico com active --&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group mb-3&quot;</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item active&quot;</span>&gt;</span>segundo item (ativo)<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>terceiro item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>quarto item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>quinto item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;col&quot;</span>&gt;</span>
+        <span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- básico com active --&gt;</span>
+        <span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- com links --&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group&quot;</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action&quot;</span>&gt;</span>Primeiro item<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-primary&quot;</span>&gt;</span>Item com estilo primário<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-secondary&quot;</span>&gt;</span>item com estilo secundário<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-success&quot;</span>&gt;</span>item com estilo success<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-danger&quot;</span>&gt;</span>item com estilo danger<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-warning&quot;</span>&gt;</span>item com estilo warning<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-info&quot;</span>&gt;</span>item com estilo info<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-light&quot;</span>&gt;</span>item com estilo light<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action list-group-item-dark&quot;</span>&gt;</span>item com estilo dark<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;row mt-4&quot;</span>&gt;</span>
+    <span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- básico com badges --&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;col&quot;</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group mb-3&quot;</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span>&gt;</span>item <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">span</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;badge bg-primary rounded-pill&quot;</span>&gt;</span>14<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">span</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span>&gt;</span>segundo item <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">span</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;badge bg-primary rounded-pill&quot;</span>&gt;</span>01<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">span</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span>&gt;</span>terceiro item <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">span</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;badge bg-primary rounded-pill&quot;</span>&gt;</span>08<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">span</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span>&gt;</span>quarto item <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">span</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;badge bg-primary rounded-pill&quot;</span>&gt;</span>10<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">span</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span>&gt;</span>quinto item <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">span</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;badge bg-primary rounded-pill&quot;</span>&gt;</span>15<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">span</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;col&quot;</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group&quot;</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action active&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-current</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;true&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;d-flex w-100 justify-content-between&quot;</span>&gt;</span>
+                    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mb-1&quot;</span>&gt;</span>List group item heading<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span>&gt;</span>
+                    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>3 days ago<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mb-1&quot;</span>&gt;</span>Some placeholder content in a paragraph.<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>And some small print.<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;d-flex w-100 justify-content-between&quot;</span>&gt;</span>
+                    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mb-1&quot;</span>&gt;</span>List group item heading<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span>&gt;</span>
+                    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">small</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;text-body-secondary&quot;</span>&gt;</span>3 days ago<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mb-1&quot;</span>&gt;</span>Some placeholder content in a paragraph.<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">small</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;text-body-secondary&quot;</span>&gt;</span>And some muted small print.<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item list-group-item-action&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;d-flex w-100 justify-content-between&quot;</span>&gt;</span>
+                    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mb-1&quot;</span>&gt;</span>List group item heading<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span>&gt;</span>
+                    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">small</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;text-body-secondary&quot;</span>&gt;</span>3 days ago<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mb-1&quot;</span>&gt;</span>Some placeholder content in a paragraph.<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">small</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;text-body-secondary&quot;</span>&gt;</span>And some muted small print.<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">small</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;col&quot;</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group&quot;</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">input</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;form-check-input me-1&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;checkbox&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">value</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;firstCheckboxStretched&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">label</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;form-check-label stretched-link&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">for</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;firstCheckboxStretched&quot;</span>&gt;</span>First checkbox<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">label</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">input</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;form-check-input me-1&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;radio&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">value</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;secondCheckboxStretched&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">label</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;form-check-label stretched-link&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">for</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;secondCheckboxStretched&quot;</span>&gt;</span>Second checkbox<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">label</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;list-group-item&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">input</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;form-check-input me-1&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;checkbox&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">value</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;thirdCheckboxStretched&quot;</span>&gt;</span>
+                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">label</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;form-check-label stretched-link&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">for</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;thirdCheckboxStretched&quot;</span>&gt;</span>Third checkbox<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">label</span>&gt;</span>
+            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span></code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+
+                                    </div>
+
+                                </div>
+                            </section>
+
+                        </article>
+                    </div>
+
+
+
+
+                </div>
+            </main>
+
+
+        </div>
+
+        <!-- Core theme JS (inclui bootstrap)-->
+        <script type="module" src="../js/sigmun.js"></script>
+
+        <script>
+            copyToClipboard = (elem) => {
+                const element = document.querySelector(elem);
+                const storage = document.createElement('textarea');
+                storage.value = element.textContent;
+                element.appendChild(storage);
+
+                storage.select();
+                storage.setSelectionRange(0, 99999);
+                document.execCommand('copy');
+                element.removeChild(storage);
+            }
+        </script>
+
+    </body>
+</html>
