@@ -11900,6 +11900,10 @@ body, html {
   color: #fff !important;
 }
 
+.bg-primary {
+  background-color: #023e84 !important;
+}
+
 /*custom*/
 html, body {
   font-family: "Inter", sans-serif, sans-serif;
