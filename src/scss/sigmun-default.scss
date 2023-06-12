@@ -331,7 +331,7 @@ html, body {
     transition: all .1s linear;
 }
 
-.nav-link[aria-expanded="true"]{
+.sm-hero__sidenav .nav-link[aria-expanded="true"]{
     color: #FFF !important;
     background: rgba(0, 0, 0, 0.3) !important;
     border-left: 5px solid rgba(0, 0, 0, 0.5) !important;
@@ -683,3 +683,7 @@ pre code {
 }
 
 
+/* navs & tabs */
+.nav-pills .nav-link.active {
+    --bs-nav-pills-link-active-bg: #023e84 !important;
+}
