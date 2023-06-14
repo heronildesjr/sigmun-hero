@@ -252,7 +252,7 @@
                                       <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                      <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React-native (em breve)</button>
+                                      <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                       <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
@@ -318,7 +318,80 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+                                        <pre>
+<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 255, 255); font-weight:400;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">&quot;offcanvas&quot;</span>
+    <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">&quot;#offcanvasExample&quot;</span>
+    <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;offcanvasExample&quot;</span>
+&gt;</span>
+Trigger de exemplo com button
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
 
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">&quot;offcanvas&quot;</span>
+    <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">&quot;#offcanvasExample2&quot;</span>
+    <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;offcanvasExample2&quot;</span>
+&gt;</span>
+Top offcanvas
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;offcanvasExample&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;offcanvasExampleLabel&quot;</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas.Title</span>&gt;</span>Offcanvas<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas.Title</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>
+            <span class="hljs-attr">btnType</span>=<span class="hljs-string">&quot;light&quot;</span>
+            <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;btn-close&quot;</span>
+            <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string">&quot;offcanvas&quot;</span>
+        /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas.Header</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">div</span>&gt;</span>
+        texto de exemplo para o offcanvas
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        pode haver qualquer coisa aqui
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown</span>
+        <span class="hljs-attr">action</span>=<span class="hljs-string">{</span>
+            &lt;<span class="hljs-attr">Dropdown.Action</span> <span class="hljs-attr">btnType</span>=<span class="hljs-string">&quot;secondary&quot;</span>&gt;</span>Dropdown<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Action</span>&gt;</span>
+        }
+        &gt;
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas.Body</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas</span>
+    <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;offcanvasExample2&quot;</span>
+    <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;offcanvasExampleLabel2&quot;</span>
+    <span class="hljs-attr">placement</span>=<span class="hljs-string">&quot;top&quot;</span>
+    &gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas.Title</span>&gt;</span>Offcanvas<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas.Title</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">btnType</span>=<span class="hljs-string">&quot;light&quot;</span>
+        <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;btn-close&quot;</span>
+        <span class="hljs-attr">data-bs-dismiss</span>=<span class="hljs-string">&quot;offcanvas&quot;</span>
+        /&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas.Header</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Offcanvas.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">div</span>&gt;</span>
+        texto de exemplo para o offcanvas
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        pode haver qualquer coisa aqui
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown</span>
+        <span class="hljs-attr">action</span>=<span class="hljs-string">{</span>
+            &lt;<span class="hljs-attr">Dropdown.Action</span> <span class="hljs-attr">btnType</span>=<span class="hljs-string">&quot;secondary&quot;</span>&gt;</span>Dropdown<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Action</span>&gt;</span>
+        }
+        &gt;
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Dropdown.Item</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown.Item</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Dropdown</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas.Body</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Offcanvas</span>&gt;</span></span></code></pre>
                                     </div>
 
                                 </div>
