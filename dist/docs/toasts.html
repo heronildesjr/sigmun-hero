@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SIGMun Components pack - Popovers</title>
+        <title>SIGMun Components pack - Toasts</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -173,8 +173,9 @@
                                             <a class="nav-link" href="navs-tabs.html">Navs &amp; tabs</a>
                                             <a class="nav-link" href="navbar.html">Navbar</a>
                                             <a class="nav-link" href="offcanvas.html">Offcanvas</a>
-                                            <a class="nav-link active" href="popovers.html">Popovers</a>
-                                            <a class="nav-link" href="toasts.html">Toasts</a>
+                                            <a class="nav-link" href="popovers.html">Popovers</a>
+                                            <a class="nav-link" href="#sidebar">Sidebar</a>
+                                            <a class="nav-link active" href="toasts.html">Toasts</a>
                                             <a class="nav-link" href="tooltips.html">Tooltips</a>
                                         </nav>
                                     </div>
@@ -189,43 +190,36 @@
                 <div class="container-fluid">
 
 
-                    <h2 class="text-primary fs-4 fw-bold">Popovers</h2>
+                    <h2 class="text-primary fs-4 fw-bold">Toasts</h2>
 
                     <div class="card p-3">
                         <article>
                             <header>
-                                <p>O popover é um componente do Bootstrap que permite exibir informações adicionais ou contextuais ao passar o mouse sobre um elemento específico. Ele é útil para fornecer detalhes extras, dicas ou instruções breves, sem a necessidade de ocupar espaço na página ou interromper o fluxo de conteúdo.</p>
-                                <p>Com o popover, você pode adicionar facilmente caixas de informações flutuantes a botões, links, imagens ou qualquer elemento que você desejar. Ao passar o mouse sobre o elemento, o popover é acionado, revelando o conteúdo adicional.</p>
+                                <p>Os toasts são componentes do Bootstrap que permitem exibir breves notificações ou mensagens informativas no canto superior ou inferior da página. Eles são úteis para fornecer feedback ao usuário sobre ações realizadas, alertas importantes ou qualquer tipo de mensagem que precise ser comunicada de forma discreta.</p>
+                                <p>Os toasts podem conter textos simples ou até mesmo elementos HTML mais complexos, como botões ou imagens. Eles podem ser configurados para desaparecer automaticamente após um determinado período de tempo ou permanecer visíveis até que o usuário os feche manualmente.</p>
                             </header>
 
                             <section class="border rounded-1 p-3">
                                 <h3 class="fs-6 fw-bold mb-3">Exemplos</h3>
 
-                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="auto"
-                                data-bs-content="Conteúdo do popover aqui">auto popover dispensável</a>
+                                <button type="button" class="btn btn-primary" onclick="sigmun.functions.showToast('toast-exemplo')">mostrar toast</button>
 
-                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="top"
-                                data-bs-content="Conteúdo do popover aqui">top popover dispensável</a>
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                  <div id="toast-exemplo" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="https://via.placeholder.com/16x16" class="rounded me-2" alt="alt">
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small>11 mins atrás</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Essa é uma mensagem de toasts. Você pode colocar o que quiser aqui dentro e ela vai se adaptar ao tamanho.
+                                    </div>
+                                  </div>
+                                </div>
 
-                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="left"
-                                data-bs-content="Conteúdo do popover aqui">left popover dispensável</a>
-
-                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="right"
-                                data-bs-content="Conteúdo do popover aqui">right popover dispensável</a>
-
-                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="bottom"
-                                data-bs-content="Conteúdo do popover aqui">bottom popover dispensável</a>
-
-                                <!-- popover com delay -->
-                                <p class="mt-4">Popover com delay</p>
-                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
-                                data-bs-trigger="focus" data-bs-title="título popover com delay" data-bs-placement="top"
-                                data-bs-content="Conteúdo do popover aqui" data-bs-delay="500">top popover com delay</a>
+                                <button type="button" class="btn btn-primary" onclick="sigmun.functions.showToast('toast-exemplo', true, 1000)">mostrar toast (tempo de delay reduzido)</button>
+                                <button type="button" class="btn btn-primary" onclick="sigmun.functions.showToast('toast-exemplo', false)">mostrar toast (fixo)</button>
 
                             </section>
 
@@ -253,32 +247,7 @@
                                             </div>
 
                                             <!-- código html -->
-<pre>
-<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;0&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;popover&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-trigger</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;focus&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;título popover dispensável&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;auto&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-content</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Conteúdo do popover aqui&quot;</span>&gt;</span>auto popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
 
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;0&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;popover&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-trigger</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;focus&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;título popover dispensável&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;top&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-content</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Conteúdo do popover aqui&quot;</span>&gt;</span>top popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
-
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;0&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;popover&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-trigger</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;focus&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;título popover dispensável&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;left&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-content</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Conteúdo do popover aqui&quot;</span>&gt;</span>left popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
-
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;0&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;popover&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-trigger</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;focus&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;título popover dispensável&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;right&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-content</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Conteúdo do popover aqui&quot;</span>&gt;</span>right popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
-
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;0&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;popover&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-trigger</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;focus&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;título popover dispensável&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;bottom&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-content</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Conteúdo do popover aqui&quot;</span>&gt;</span>bottom popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
-
-<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- popover com delay --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mt-4&quot;</span>&gt;</span>Popover com delay<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;0&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;popover&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-trigger</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;focus&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;título popover com delay&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;top&quot;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-content</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Conteúdo do popover aqui&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-delay</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;500&quot;</span>&gt;</span>top popover com delay<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span></code></pre>
 
                                         </div>
                                     </div>

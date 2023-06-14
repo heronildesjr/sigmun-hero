@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SIGMun Components pack - Modal</title>
+        <title>SIGMun Components pack - Tooltips</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -169,13 +169,14 @@
                                             <a class="nav-link" href="dropdowns.html">Dropdowns</a>
                                             <a class="nav-link" href="inputs.html">Inputs</a>
                                             <a class="nav-link" href="list-groups.html">List group</a>
-                                            <a class="nav-link active" href="modal.html">Modal</a>
+                                            <a class="nav-link" href="modal.html">Modal</a>
                                             <a class="nav-link" href="navs-tabs.html">Navs &amp; tabs</a>
                                             <a class="nav-link" href="navbar.html">Navbar</a>
                                             <a class="nav-link" href="offcanvas.html">Offcanvas</a>
                                             <a class="nav-link" href="popovers.html">Popovers</a>
-                                            <a class="nav-link" href="docs/toasts.html">Toasts</a>
-                                            <a class="nav-link" href="tooltips.html">Tooltips</a>
+                                            <a class="nav-link" href="#sidebar">Sidebar</a>
+                                            <a class="nav-link" href="toasts.html">Toasts</a>
+                                            <a class="nav-link active" href="tooltips.html">Tooltips</a>
                                         </nav>
                                     </div>
                                 </li>
@@ -189,42 +190,35 @@
                 <div class="container-fluid">
 
 
-                    <h2 class="text-primary fs-4 fw-bold">Modals</h2>
+                    <h2 class="text-primary fs-4 fw-bold">Tooltips</h2>
 
                     <div class="card p-3">
                         <article>
                             <header>
-                                <p>Os modais são componentes populares no desenvolvimento web que fornecem uma maneira elegante de exibir informações importantes, interagir com os usuários e solicitar confirmações. Com o Modal do Bootstrap, você pode criar facilmente janelas modais atraentes e funcionais em seu site ou aplicativo.</p>
-                                <p>Os modais do Bootstrap são uma maneira poderosa de criar diálogos interativos, exibir informações importantes e melhorar a usabilidade do seu site ou aplicativo. Com sua flexibilidade e recursos avançados, os modais são uma ótima adição ao seu conjunto de ferramentas de design e desenvolvimento.</p>
+                                <p>Os tooltips são pequenas caixas de informações flutuantes que aparecem ao passar o mouse sobre um elemento específico. Eles fornecem dicas contextuais e explicam a função ou o propósito desse elemento em particular.</p>
+                                <p>Os tooltips são úteis para fornecer orientações adicionais, esclarecer o significado de ícones ou abreviações, ou fornecer informações breves sobre um determinado elemento na página.</p>
                             </header>
 
                             <section class="border rounded-1 p-3">
                                 <h3 class="fs-6 fw-bold mb-3">Exemplos</h3>
 
+                                <p class="">Em links</p>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-title="tooltip padrão">link</a>
 
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Modal de exemplo
+                                <p class="mt-4">Em botões</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="tooltip padrão">link estilo botão</a>
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip"
+                                    data-bs-title="tootip de exemplo em elemento botão.">
+                                    Botão
                                 </button>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Título</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                conteúdo
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                                <button type="button" class="btn btn-primary">Salvar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="mt-4">Posicionamentos</p>
+                                <a href="#" class="btn btn-primary" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="tooltip esquerda">esquerda</a>
+                                <a href="#" class="btn btn-primary" data-bs-placement="right" data-bs-toggle="tooltip" data-bs-title="tooltip direita">direita</a>
+                                <a href="#" class="btn btn-primary" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-title="tooltip inferior">inferior</a>
+                                <a href="#" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" data-bs-title="tooltip superior">Superior</a>
 
                             </section>
 
@@ -235,7 +229,7 @@
                                       <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                      <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
+                                      <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                       <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
@@ -252,59 +246,44 @@
                                             </div>
 
                                             <!-- código html -->
-
 <pre>
-<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- Button trigger modal --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-target</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#exampleModal&quot;</span>&gt;</span>
-    Modal de exemplo
+<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;&quot;</span>&gt;</span>Em links<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip padrão&quot;</span>&gt;</span>link<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mt-4&quot;</span>&gt;</span>Em botões<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip padrão&quot;</span>&gt;</span>link estilo botão<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-secondary&quot;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;top&quot;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-custom-class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;custom-tooltip&quot;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tootip de exemplo em elemento botão.&quot;</span>&gt;</span>
+    Botão
 <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
 
-<span style="color:rgb(114, 133, 183); font-weight:400;">&lt;!-- Modal --&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal fade&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;exampleModal&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;-1&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-labelledby</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;exampleModalLabel&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-hidden</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;true&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal-dialog modal-dialog-centered&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal-content&quot;</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal-header&quot;</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">h1</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal-title fs-5&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;exampleModalLabel&quot;</span>&gt;</span>Título<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">h1</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn-close&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-dismiss</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-label</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Close&quot;</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal-body&quot;</span>&gt;</span>
-                conteúdo
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal-footer&quot;</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-secondary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-dismiss</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal&quot;</span>&gt;</span>Fechar<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span>&gt;</span>Salvar<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span></code></pre>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">p</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;mt-4&quot;</span>&gt;</span>Posicionamentos<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">p</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;left&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip esquerda&quot;</span>&gt;</span>esquerda<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;right&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip direita&quot;</span>&gt;</span>direita<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;bottom&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip inferior&quot;</span>&gt;</span>inferior<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-placement</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;top&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-title</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;tooltip superior&quot;</span>&gt;</span>Superior<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
+</code></pre>
 
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
-                                        <pre>
-<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-target</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#exampleModal&quot;</span>&gt;</span>
-    Modal de exemplo
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Button</span>&gt;</span>
 
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Modal</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;exampleModal&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Header</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Title</span> <span style="color:rgb(255, 157, 164); font-weight:400;">className</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;fs-5&quot;</span>&gt;</span>Título<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Title</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Header</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Body</span>&gt;</span>conteúdo<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Body</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Footer</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-dismiss</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;modal&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">btnType</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;secondary&quot;</span>&gt;</span>
-        Fechar
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Button</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">Button</span>&gt;</span>Salvar<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Button</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Modal.Footer</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">Modal</span>&gt;</span></code></pre>
                                     </div>
 
                                 </div>
                             </section>
 
+
+
+
+
                         </article>
                     </div>
+
+
+
 
 
 
