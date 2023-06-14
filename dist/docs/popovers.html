@@ -189,60 +189,44 @@
                 <div class="container-fluid">
 
 
-                    <h2 class="text-primary fs-4 fw-bold">Offcanvas</h2>
+                    <h2 class="text-primary fs-4 fw-bold">Popovers</h2>
 
                     <div class="card p-3">
                         <article>
                             <header>
-                                <p>A barra de navegação (navbar) é um componente crucial para facilitar a navegação e a experiência do usuário em um site ou aplicativo. Com o Bootstrap, você pode criar uma barra de navegação elegante e responsiva que se adapta a diferentes dispositivos e tamanhos de tela.</p>
-                                <p>A barra de navegação geralmente é posicionada no topo da página e contém links para diferentes seções do site ou aplicativo. Ela permite que os usuários acessem facilmente diferentes páginas, categorias ou recursos, proporcionando uma experiência de navegação intuitiva.</p>
+                                <p>O popover é um componente do Bootstrap que permite exibir informações adicionais ou contextuais ao passar o mouse sobre um elemento específico. Ele é útil para fornecer detalhes extras, dicas ou instruções breves, sem a necessidade de ocupar espaço na página ou interromper o fluxo de conteúdo.</p>
+                                <p>Com o popover, você pode adicionar facilmente caixas de informações flutuantes a botões, links, imagens ou qualquer elemento que você desejar. Ao passar o mouse sobre o elemento, o popover é acionado, revelando o conteúdo adicional.</p>
                             </header>
 
                             <section class="border rounded-1 p-3">
                                 <h3 class="fs-6 fw-bold mb-3">Exemplos</h3>
 
-                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                    Trigger de exemplo com href
-                                </a>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    Trigger de exemplo com button
-                                </button>
+                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="auto"
+                                data-bs-content="Conteúdo do popover aqui">auto popover dispensável</a>
 
-                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div>
-                                            texto de exemplo para o offcanvas<br>
-                                            pode haver qualquer coisa aqui
-                                        </div>
-                                        <div class="dropdown mt-3">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                                Dropdown
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="top"
+                                data-bs-content="Conteúdo do popover aqui">top popover dispensável</a>
 
+                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="left"
+                                data-bs-content="Conteúdo do popover aqui">left popover dispensável</a>
 
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Top offcanvas</button>
+                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="right"
+                                data-bs-content="Conteúdo do popover aqui">right popover dispensável</a>
 
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        ...
-                                    </div>
-                                </div>
+                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" data-bs-title="título popover dispensável" data-bs-placement="bottom"
+                                data-bs-content="Conteúdo do popover aqui">bottom popover dispensável</a>
+
+                                <!-- popover com delay -->
+                                <p class="mt-4">Popover com delay</p>
+                                <a tabindex="0" class="btn btn-primary" role="button" data-bs-toggle="popover"
+                                data-bs-trigger="focus" data-bs-title="título popover com delay" data-bs-placement="top"
+                                data-bs-content="Conteúdo do popover aqui" data-bs-delay="500">top popover com delay</a>
+
                             </section>
 
                             <section class="border rounded-1 p-3 my-4">
@@ -269,50 +253,6 @@
                                             </div>
 
                                             <!-- código html -->
-<pre>
-<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#offcanvasExample&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">role</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-controls</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasExample&quot;</span>&gt;</span>
-    Trigger de exemplo com href
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-target</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#offcanvasExample&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-controls</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasExample&quot;</span>&gt;</span>
-    Trigger de exemplo com button
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas offcanvas-start&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;-1&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasExample&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-labelledby</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasExampleLabel&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas-header&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas-title&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasExampleLabel&quot;</span>&gt;</span>Offcanvas<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn-close&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-dismiss</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-label</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Close&quot;</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas-body&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-            texto de exemplo para o offcanvas<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">br</span>&gt;</span>
-            pode haver qualquer coisa aqui
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;dropdown mt-3&quot;</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-secondary dropdown-toggle&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;dropdown&quot;</span>&gt;</span>
-                Dropdown
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;dropdown-menu&quot;</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;dropdown-item&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span>&gt;</span>Action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;dropdown-item&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span>&gt;</span>Another action<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
-                <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">a</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;dropdown-item&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">href</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#&quot;</span>&gt;</span>Something else here<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">a</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">li</span>&gt;</span>
-            <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">ul</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-
-
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn btn-primary&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-toggle</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-target</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;#offcanvasTop&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-controls</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasTop&quot;</span>&gt;</span>Top offcanvas<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas offcanvas-top&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">tabindex</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;-1&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasTop&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-labelledby</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasTopLabel&quot;</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas-header&quot;</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas-title&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">id</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvasTopLabel&quot;</span>&gt;</span>Offcanvas top<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">h5</span>&gt;</span>
-        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">button</span> <span style="color:rgb(255, 157, 164); font-weight:400;">type</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;button&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;btn-close&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">data-bs-dismiss</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas&quot;</span> <span style="color:rgb(255, 157, 164); font-weight:400;">aria-label</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;Close&quot;</span>&gt;</span><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">button</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span style="color:rgb(255, 157, 164); font-weight:400;">div</span> <span style="color:rgb(255, 157, 164); font-weight:400;">class</span>=<span style="color:rgb(209, 241, 169); font-weight:400;">&quot;offcanvas-body&quot;</span>&gt;</span>
-        ...
-    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span>
-<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span style="color:rgb(255, 157, 164); font-weight:400;">div</span>&gt;</span></code></pre>
-
 
 
                                         </div>
@@ -324,8 +264,143 @@
                                 </div>
                             </section>
 
+
+
+                            <section class="border rounded-1 p-3 my-4">
+
+                                    <p>API</p>
+
+                                    <div class="table-responsive"><table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome</th>
+                                                <th>Tipo</th>
+                                                <th>Padrão</th>
+                                                <th>Descrição</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code>allowList</code></td>
+                                                <td>object</td>
+                                                <td><a href="https://getbootstrap.com/docs/5.3/getting-started/javascript/#sanitizer">Default value</a></td>
+                                                <td>Objeto que contém atributos e tags permitidos.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>animation</code></td>
+                                                <td>boolean</td>
+                                                <td><code>true</code></td>
+                                                <td>Aplique uma transição "fade" CSS ao popover.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>boundary</code></td>
+                                                <td>string, element</td>
+                                                <td><code>'clippingParents'</code></td>
+                                                <td>Limite de overflow do popover (aplica-se apenas ao modificador preventOverflow de Popper). Por padrão, é <code>'clippingParents'</code> e pode aceitar uma referência HTMLElement (somente via JavaScript). Para mais informações, consulte a doc do Popper <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow docs</a>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>container</code></td>
+                                                <td>string, element, false</td>
+                                                <td><code>false</code></td>
+                                                <td>Aplica "Append" (anexa) o popover a um elemento específico. Exemplo: <code>container: 'body'</code>. Essa opção é particularmente útil porque permite posicionar o popover no fluxo do documento próximo ao elemento acionador -&nbsp;o que evitará que o popover flutue para longe do elemento acionador durante o redimensionamento de uma janela.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>content</code></td>
+                                                <td>string, element, function</td>
+                                                <td><code>''</code></td>
+                                                <td>O conteúdo de texto do popover. Se uma função for fornecida, ela será chamada com sua referência <code>this</code> definida para o elemento ao qual o popover está anexado.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>customClass</code></td>
+                                                <td>string, function</td>
+                                                <td><code>''</code></td>
+                                                <td>Adicione classes ao popover quando ele for exibido. Observe que essas classes serão adicionadas além de quaisquer classes especificadas no modelo. Para adicionar várias classes, separe-as com espaços: <code>'classe-1 classe-2'</code>. Você também pode passar uma função que deve retornar uma única string contendo nomes de classes adicionais.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>delay</code></td>
+                                                <td>number, object</td>
+                                                <td><code>0</code></td>
+                                                <td>Atraso (delay) na exibição e ocultação do popover (ms) — não se aplica ao tipo de trigger manual. Se um número for fornecido, o atraso será aplicado a ocultar/exibir. A estrutura do objeto é: <code>delay: { "show": 500, "hide": 100 }</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>fallbackPlacements</code></td>
+                                                <td>string, array</td>
+                                                <td><code>['top', 'right', 'bottom', 'left']</code></td>
+                                                <td>Define as posicionamentos de fallback fornecendo uma lista de posicionamentos no array (em ordem de preferência). Para mais informações, consulte Popper <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements">behavior docs</a>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>html</code></td>
+                                                <td>boolean</td>
+                                                <td><code>false</code></td>
+                                                <td>Permitir HTML no popover. Se true, as tags HTML no <code>title</code> do popover serão renderizadas no popover. Se false, a propriedade <code>innerText</code> será usada para inserir conteúdo no DOM. Use texto se estiver preocupado com ataques XSS.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>offset</code></td>
+                                                <td>number, string, function</td>
+                                                <td><code>[0, 0]</code></td>
+                                                <td>Deslocamento do popover em relação ao seu destino. Você pode passar uma string em atributos de dados com valores separados por vírgula como: <code>data-bs-offset="10,20"</code>. Quando uma função é usada para determinar o deslocamento, ela é chamada com um objeto contendo o posicionamento do popper, a referência e os retângulos do popper como seu primeiro argumento. O DOM node do elemento de trigger é passado como o segundo argumento. A função deve retornar um array com dois números: <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>, <a href=" https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distância</a>. Para mais informações, consulte Popper <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>placement</code></td>
+                                                <td>string, function</td>
+                                                <td><code>'top'</code></td>
+                                                <td>Como posicionar o popover: automático (auto), superior (top), inferior (bottom), esquerda (left), direita (right). Quando <code>auto</code> é especificado, ele reorientará dinamicamente o popover. Quando uma função é usada para determinar o posicionamento, ela é chamada com o nó DOM popover como seu primeiro argumento e o DOM Node do elemento acionador como segundo. O contexto <code>this</code> é definido para a instância popover.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>popperConfig</code></td>
+                                                <td>null, object, function</td>
+                                                <td><code>null</code></td>
+                                                <td>Para alterar a configuração padrão do Popper do Bootstrap, consulte <a href="https://popper.js.org/docs/v2/constructors/#options">Configuração do Popper</a>. Quando uma função é utilizada para criar a configuração do Popper, ela é chamada com um objeto que contém a configuração padrão do Popper do Bootstrap. Ele ajuda você a usar e mesclar o padrão com sua própria configuração. A função deve retornar um objeto de configuração para Popper.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>sanitize</code></td>
+                                                <td>boolean</td>
+                                                <td><code>true</code></td>
+                                                <td>Ative ou desative o "sanitize". Se ativado, as opções <code>'template'</code>, <code>'content'</code> e <code>'title'</code> serão limpas (sanitized).</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>sanitizeFn</code></td>
+                                                <td>null, function</td>
+                                                <td><code>null</code></td>
+                                                <td>Aqui você pode fornecer sua própria função de sanitize. Isso pode ser útil se você preferir usar uma biblioteca dedicada para realizar a sanitização.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>selector</code></td>
+                                                <td>string, false</td>
+                                                <td><code>false</code></td>
+                                                <td>Se um seletor for fornecido, os objetos popover serão delegados aos destinos especificados. Na prática, isso também é usado para aplicar popovers a elementos DOM adicionados dinamicamente (suporte <code>jQuery.on</code>). Consulte <a href="https://github.com/twbs/bootstrap/issues/4215">este problema</a> e <a href="https://codepen.io/Johann-S/pen/djJYPb ">um exemplo informativo</a>. <strong>Observação</strong>: o atributo <code>title</code> não deve ser usado como seletor.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>template</code></td>
+                                                <td>string</td>
+                                                <td><code>'&lt;div class="popover" role="popover"&gt;&lt;div class="popover-arrow"&gt;&lt;/div&gt;&lt;div class="popover-inner"&gt;&lt;/div&gt;&lt;/div&gt;'</code></td>
+                                                <td>HTML base a ser usado ao criar o popover. O <code>title</code> do popover será injetado no <code>.popover-inner</code>. <code>.popover-arrow</code> se tornará a seta do popover. O elemento wrapper mais externo deve ter a classe <code>.popover</code> e <code>role="popover"</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>title</code></td>
+                                                <td>string, element, function</td>
+                                                <td><code>''</code></td>
+                                                <td>O título popover. Se uma função for fornecida, ela será chamada com sua referência <code>this</code> definida para o elemento ao qual o popover está anexado.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>trigger</code></td>
+                                                <td>string</td>
+                                                <td><code>'hover focus'</code></td>
+                                                <td>Como o popover é acionado: clique (click), passe o mouse (hover), foco (focus), manual. Você pode passar vários triggers; separe-os com um espaço. <code>'manual'</code> indica que o popover será acionado programaticamente por meio de <code>.popover('show')</code>, <code>.popover('hide')</code> e métodos <code>.popover('toggle')</code>; este valor não pode ser combinado com nenhum outro gatilho (trigger). <code>'hover'</code> por si só resultará em popovers que não podem ser acionados pelo teclado e só devem ser usados se métodos alternativos para transmitir as mesmas informações para usuários de teclado estiverem presentes.</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+
+                                </section>
+
+                            </section>
+
                         </article>
                     </div>
+
+
+
 
 
 
