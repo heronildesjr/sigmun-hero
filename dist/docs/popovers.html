@@ -236,7 +236,7 @@
                                       <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#alertTabHtml" type="button" role="tab" aria-controls="alertTabHtml" aria-selected="true">HTML</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                      <button class="nav-link disabled" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
+                                      <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button" role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                       <button class="nav-link disabled" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue-tab-pane" type="button" role="tab" aria-controls="vue-tab-pane" aria-selected="false">Vue 2+ (em breve)</button>
@@ -283,7 +283,72 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab" tabindex="0">
+                                        <pre>
+<code id="htmlViewer" style="color:rgb(255, 255, 255); font-weight:400;background-color:rgb(0, 36, 81);background:rgb(0, 36, 81);display:block;padding: .5em;"><span style="color:rgb(255, 255, 255); font-weight:400;"><span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">OverlayTrigger</span>
+    <span class="hljs-attr">trigger</span>=<span class="hljs-string">&quot;click&quot;</span>
+    <span class="hljs-attr">placement</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">auto</span>&quot;}
+    <span class="hljs-attr">overlay</span>=<span class="hljs-string">{</span>
+        &lt;<span class="hljs-attr">Popover</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">popover-positioned-auto</span>`}&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Header</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>auto popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Body</span>&gt;</span>Conteúdo do popover aqui<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+    }
+    &gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>auto popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">OverlayTrigger</span>&gt;</span>
 
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">OverlayTrigger</span>
+    <span class="hljs-attr">trigger</span>=<span class="hljs-string">&quot;click&quot;</span>
+    <span class="hljs-attr">placement</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">left</span>&quot;}
+    <span class="hljs-attr">overlay</span>=<span class="hljs-string">{</span>
+        &lt;<span class="hljs-attr">Popover</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">popover-positioned-left</span>`}&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Header</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>left popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Body</span>&gt;</span>Conteúdo do popover aqui<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+    }
+    &gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>left popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">OverlayTrigger</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">OverlayTrigger</span>
+    <span class="hljs-attr">trigger</span>=<span class="hljs-string">&quot;click&quot;</span>
+    <span class="hljs-attr">placement</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">right</span>&quot;}
+    <span class="hljs-attr">overlay</span>=<span class="hljs-string">{</span>
+        &lt;<span class="hljs-attr">Popover</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">popover-positioned-right</span>`}&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Header</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>right popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Body</span>&gt;</span>Conteúdo do popover aqui<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+    }
+    &gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>right popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">OverlayTrigger</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">OverlayTrigger</span>
+    <span class="hljs-attr">trigger</span>=<span class="hljs-string">&quot;click&quot;</span>
+    <span class="hljs-attr">placement</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">bottom</span>&quot;}
+    <span class="hljs-attr">overlay</span>=<span class="hljs-string">{</span>
+        &lt;<span class="hljs-attr">Popover</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">popover-positioned-bottom</span>`}&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Header</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>bottom popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Body</span>&gt;</span>Conteúdo do popover aqui<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+    }
+    &gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>bottom popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">OverlayTrigger</span>&gt;</span>
+
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">OverlayTrigger</span>
+    <span class="hljs-attr">trigger</span>=<span class="hljs-string">&quot;click&quot;</span>
+    <span class="hljs-attr">placement</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">top</span>&quot;}
+    <span class="hljs-attr">delay</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">show:</span> <span class="hljs-attr">250</span>, <span class="hljs-attr">hide:</span> <span class="hljs-attr">400</span> }}
+    <span class="hljs-attr">overlay</span>=<span class="hljs-string">{</span>
+        &lt;<span class="hljs-attr">Popover</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">popover-positioned-top</span>`}&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Header</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;h3&quot;</span>&gt;</span>top popover dispensável<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Header</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Popover.Body</span>&gt;</span>Conteúdo do popover aqui<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover.Body</span>&gt;</span>
+        <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+    }
+    &gt;
+    <span style="color:rgb(255, 157, 164); font-weight:400;">&lt;<span class="hljs-name">Button</span>&gt;</span>top popover com delay<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+<span style="color:rgb(255, 157, 164); font-weight:400;">&lt;/<span class="hljs-name">OverlayTrigger</span>&gt;</span></span></code></pre>
                                     </div>
 
                                 </div>
