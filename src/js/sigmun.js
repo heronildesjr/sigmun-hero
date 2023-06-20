@@ -125,7 +125,13 @@ if (asideElement) {
     asideElement.classList.remove('expanded');
     });
 }
+
 // declare sigmun as global variable
 window.sigmun = sigmun;
 // export as module
-export default sigmun;
+// export default sigmun;
+
+// Webpack support
+if (typeof module !== 'undefined') {
+    module.exports = sigmun;
+}
