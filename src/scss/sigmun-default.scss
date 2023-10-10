@@ -121,6 +121,14 @@ html, body {
 .sm-hero__header-title{
     position: relative;
 }
+/* data && datasets */
+#sm-hero-demo__header[data-show-title="false"] {
+    padding-top: 57px;
+}
+
+#sm-hero-demo__header[data-show-title="false"] .sm-hero__header-title {
+    display: none !important;
+}
 /*navs*/
 .navbar-light .navbar-toggler {
     border-color: transparent;
